@@ -1,0 +1,76 @@
+.app__newsletter {
+    margin: auto;
+    background-color: #0a0a0a;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.app__newletter_head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.app__newsletter_input {
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.app__newsletter_input form {
+    width: 100%;
+}
+
+.app__newsletter_input input {
+    outline: none;
+    border: 1px solid #DCCA87;
+    background-color: transparent;
+    padding: 14px 20px;
+    width: 60%;
+    color: #DCCA87;
+}
+
+.app__newsletter_input button {
+    margin-left: 1rem;
+    padding: 8px 17px !important;
+}
+
+@media screen and (min-Width:1200px) {
+    .app__newsletter_input input {
+        width: 500px;
+    }
+}
+
+@media screen and (max-Width:850px) {
+    .app__newletter_head h1 {
+        font-size: 54px !important;
+    }
+}
+
+@media screen and (max-Width:450px) {
+    .app__newsletter_input form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .app__newsletter_input>form>input {
+        width: 100%;
+    }
+
+    .app__newsletter_input button {
+        margin: 0;
+    }
+}

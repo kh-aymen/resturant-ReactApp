@@ -1,0 +1,109 @@
+.app__specialMenu {
+    background: var(--color-black);
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.app__specialMenu-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.app__specialMenu_menu {
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+
+.app__specialMenu_menu_wine,
+.app__specialMenu_menu_cocktails {
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+}
+
+.app__specialMenu_menu_heading {
+    font-family: var(--font-base);
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 58.5px;
+    letter-spacing: 0.04em;
+    color: var(--color-white);
+}
+
+
+.app__specialMenu_menu_img {
+    width: 400px;
+    margin: 0 2rem;
+}
+
+.app__specialMenu_menu_img img {
+    width: 100%;
+    height: auto;
+}
+
+.app__specialMenu_menu_items {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    width: 100%;
+}
+
+
+@media screen and (max-width:1228px) {
+    .app__specialMenu_menu {
+        position: relative;
+        gap: 4rem;
+    }
+
+    .app__specialMenu_menu_img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+        opacity: 0.4;
+    }
+
+    .app__specialMenu_menu_img img {
+        filter: blur(17px);
+    }
+
+    .app__specialMenu_menu_wine,
+    .app__specialMenu_menu_cocktails {
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width:889px) {
+    .app__specialMenu_menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .app__specialMenu_menu_wine,
+    .app__specialMenu_menu_cocktails {
+        width: 90%;
+    }
+
+    .app__specialMenu_menu_img {
+        margin: 0;
+        width: 60%;
+        height: 60%;
+        background-image: url(../../assets/menu.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        filter: blur(17px);
+    }
+
+    .app__specialMenu_menu_img img {
+        display: none;
+    }
+}
